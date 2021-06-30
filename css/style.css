@@ -30,15 +30,22 @@ button{
   border-radius: 25px;
   border: none;
   cursor: pointer;
+  font-weight: 700;
 }
 
 button.btn-white{
   background-color: #FFFFFF;
+  color: #000000;
+}
+
+button.btn-black{
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 /* header */
 header{
-  background-color: #3161e0;
+  background-color: #2a5ee8;
   padding-top: 20px;
 }
 
@@ -96,3 +103,38 @@ header{
   transform: translate(0, -50%);
 }
 
+/* main */
+.hero{
+  height: 550px;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  position: relative;
+}
+
+.hero-box{
+  height: 300px;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-box h2{
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.hero p{
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.hero-box button{
+  margin-right: 30px;
+  padding: 15px 20px;
+}
