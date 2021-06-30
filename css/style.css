@@ -4,3 +4,95 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* common */
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-left{
+  float: left;
+}
+
+button{
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+button.btn-white{
+  background-color: #FFFFFF;
+}
+
+/* header */
+header{
+  background-color: #3161e0;
+  padding-top: 20px;
+}
+
+.logo, .main-menu, .login{
+  display: inline-block;
+  height: 50px;
+}
+
+.logo, .login{
+  width: 15%;
+}
+
+.logo{
+  position: relative;
+}
+
+.logo img{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.main-menu{
+  width: 70%;
+  text-align: center;
+  position: relative;
+}
+
+.main-menu ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.main-menu li, .main-menu a{
+  display: inline-block;
+}
+
+.main-menu a{
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.login{
+  position: relative;
+}
+
+.login button{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
